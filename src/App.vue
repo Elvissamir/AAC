@@ -1,8 +1,9 @@
 <template>
-  <div class="app-container">
+  <div class="w-full relative">
     <Nav></Nav>
-    <div class="content-container bg-blue-800 text-white text-5xl">
-      Content Container
+    <div class="w-full">
+      <!-- VUE VIEW -->
+      <router-view/>
     </div>
     <Footer></Footer>
   </div>
