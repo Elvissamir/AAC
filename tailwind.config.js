@@ -265,7 +265,9 @@ module.exports = {
         '"Liberation Mono"',
         '"Courier New"',
         'monospace'
-      ]
+      ],
+      'playfair': ['"Playfair Display"', 'cursive'],
+      'lora': ['lora', 'cursive']
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
