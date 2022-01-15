@@ -13,10 +13,10 @@
 
             <!-- MENU LINKS -->
             <div class="flex flex-col justify-center mt-3 w-6/12 mx-auto lg:flex-row lg:mx-0 lg:w-8/12 lg:justify-between lg:max-w-screen-md lg:mt-2 2xl:flex-col 2xl:mx-auto">
-                <router-link class="nav-link" to="/">Home</router-link>
-                <router-link class="nav-link" to="/algorithms">Algorithms</router-link>
-                <router-link class="nav-link" to="/challenges">Challenges</router-link>
-                <router-link class="nav-link" to="/about">About</router-link>
+                <router-link class="nav-link" to="{ name: 'home' }">Home</router-link>
+                <router-link class="nav-link" to="{ name: 'algorithms' }">Algorithms</router-link>
+                <router-link class="nav-link" to="{ name: 'challenges' }">Challenges</router-link>
+                <router-link class="nav-link" to="{ name: 'about' }">About</router-link>
             </div>
         </div>
     </nav>
