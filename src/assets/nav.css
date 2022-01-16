@@ -11,9 +11,5 @@
 
     max-width: 150px;
     
-    @apply text-lg text-white font-lora font-bold text-center mt-4 lg:h-8 lg:text-xl 2xl:mx-auto 2xl:w-40;
-}
-
-.nav-link:hover {
-   
+    @apply text-lg text-indigo-800 font-lora font-black text-center mt-4 lg:h-8 lg:text-xl 2xl:mx-auto 2xl:w-40 hover:text-gray-800 hover:underline;
 }

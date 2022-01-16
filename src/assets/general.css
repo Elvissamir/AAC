@@ -1,0 +1,47 @@
+
+:root {
+    --brand-dark-color: rgb(49, 46, 129);
+    --brand-light-color: rgb(236, 72, 153);
+    --brand-bg-color: rgb(229, 231, 235);
+    --brand-footer-color: rgb(31, 41, 55);
+}
+
+.app-container {
+    background-color: var(--brand-bg-color);
+
+    @apply w-full min-h-screen relative;
+}
+
+.main-content-wrapper {
+    @apply w-full h-auto mb-24;
+}
+
+.content {
+    max-width: 1000px;
+    @apply pt-6 w-10/12 mx-auto lg:pt-24;
+}
+
+.title {
+    color: var(--brand-dark-color);
+    @apply pt-4 text-3xl text-center font-black font-playfair md:text-4xl lg:text-5xl lg:pt-24;
+}
+
+.explanation {
+    color: var(--brand-dark-color);
+    @apply mt-8 w-10/12 text-lg mx-auto md:mt-16;
+}
+
+.actions-container {
+    @apply flex mt-12 w-full mx-auto justify-between items-center lg:w-6/12;
+}
+
+/* BUTTON */
+.button {
+    @apply font-lora text-lg font-black rounded-md px-4 py-2 sm:text-xl;
+}
+
+.action-button {
+
+    background-color: var(--brand-light-color);
+    @apply text-white font-black hover:bg-gray-800;
+}

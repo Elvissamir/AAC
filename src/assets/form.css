@@ -1,0 +1,38 @@
+
+.form-wrapper {
+    @apply mt-4 flex flex-col w-10/12 mx-auto md:flex-row md:justify-between md:items-end lg:w-10/12;
+}
+
+.input-form {
+    @apply flex flex-wrap w-full md:w-10/12 lg:flex-row;
+}
+
+.form-field {
+    @apply mt-3 w-full;
+}
+
+.form-label {
+    color: var(--brand-dark-color);
+    @apply block font-lora text-lg font-bold mb-1 sm:text-xl;
+}
+
+.form-input {
+    @apply font-lora font-black w-full shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight;
+}
+
+.form-textarea {
+    resize: none;
+    width: 100%;
+
+    @apply border rounded;
+}
+
+.form-button {
+    @apply md:w-2/12;
+}
+
+.form-input:focus, .form-textarea:focus {
+    outline: none !important;
+    border-color: rgba(76, 31, 240, 0.7);
+    box-shadow: 0 0 25px rgba(87, 33, 237, 0.5);
+}

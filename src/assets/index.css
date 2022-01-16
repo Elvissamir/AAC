@@ -5,5 +5,8 @@
 @tailwind utilities;
 
 /* app styles */
+@import './general.css';
 @import './nav.css';
-
+@import './mobilemenu.css';
+@import './form.css';
+@import './anagram.css';

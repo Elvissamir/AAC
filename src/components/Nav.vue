@@ -1,8 +1,8 @@
 <template>
-    <nav class="bg-yellow-700 w-full nav transition-all 2xl:w-3/12" :class="[(show)? 'translate-x-0' : '-translate-x-full']">
+    <nav class="bg-white w-full nav transform transition-all 2xl:w-3/12" :class="[(show)? 'translate-x-0' : '-translate-x-full']">
         <div class="flex flex-col w-full h-screen lg:flex-row lg:h-auto lg:py-2 lg:px-4 lg:justify-around 2xl:flex-col 2xl:h-screen 2xl:justify-center">
             <!-- GITHUB LINK -->
-            <div class="flex text-white font-bold mx-auto justify-center mt-8 lg:mx-0 lg:mt-3">
+            <div class="flex text-indigo-900 font-bold mx-auto justify-center mt-8 lg:mx-0 lg:mt-3">
                 <a class="flex flex-col font-black items-baseline" href="https://github.com/Elvissamir">
                     <p class="text-5xl text-center mx-auto w-12 h-8 lg:text-4xl 2xl:text-5xl 2xl:h-12">
                         <font-awesome-icon :icon="['fab', 'github-square']" />
@@ -12,11 +12,16 @@
             </div>
 
             <!-- MENU LINKS -->
-            <div class="flex flex-col justify-center mt-3 w-6/12 mx-auto lg:flex-row lg:mx-0 lg:w-8/12 lg:justify-between lg:max-w-screen-md lg:mt-2 2xl:flex-col 2xl:mx-auto">
-                <router-link class="nav-link" to="{ name: 'home' }">Home</router-link>
-                <router-link class="nav-link" to="{ name: 'algorithms' }">Algorithms</router-link>
-                <router-link class="nav-link" to="{ name: 'challenges' }">Challenges</router-link>
-                <router-link class="nav-link" to="{ name: 'about' }">About</router-link>
+            <div class="flex flex-col justify-center items-center mt-3 w-6/12 mx-auto lg:flex-row lg:mx-0 lg:w-8/12 lg:justify-between lg:max-w-screen-md lg:mt-2 2xl:flex-col 2xl:mx-auto">
+                <router-link class="nav-link" :to="{ name: 'Home' }">Home</router-link>
+                
+                <!-- Algorithm routes --> 
+                <router-link class="nav-link" :to="{ name: 'Algorithms' }">Algorithms</router-link>
+                <router-link class="nav-link" :to="{ name: 'Anagram' }">Anagram</router-link>
+
+                <!-- Challenges routes --> 
+                <router-link class="nav-link" :to="{ name: 'Challenges' }">Challenges</router-link>
+                <router-link class="nav-link" :to="{ name: 'About' }">About</router-link>
             </div>
         </div>
     </nav>
@@ -24,8 +29,13 @@
 
 <script>
 export default {
-    setup() {
-        
-    }
+    props: {
+        show: {
+            required: true,
+            type: Boolean,
+        }
+    },
+    setup(props) {
+    },
 }
 </script>
