@@ -1,6 +1,6 @@
 
 .form-wrapper {
-    @apply mt-4 flex flex-col w-10/12 mx-auto md:flex-row md:justify-between md:items-end lg:w-10/12;
+    @apply mt-4 flex w-10/12 mx-auto;
 }
 
 .input-form {
@@ -25,10 +25,6 @@
     width: 100%;
 
     @apply border rounded;
-}
-
-.form-button {
-    @apply md:w-2/12;
 }
 
 .form-input:focus, .form-textarea:focus {

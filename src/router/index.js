@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Algorithms from '../views/Algorithms.vue'
 import Challenges from '../views/Challenges.vue'
 import About from '../views/About.vue'
+import Findvowels from '../views/Findvowels.vue'
 
 // Challenges
 import Anagram from '../views/Anagram.vue'
@@ -33,6 +34,11 @@ const routes = [
     path: '/anagram',
     name: 'Anagram',
     component: Anagram
+  },
+  {
+    path: '/findvowels',
+    name: 'Findvowels',
+    component: Findvowels,
   }
 ]
 

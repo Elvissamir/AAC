@@ -1,0 +1,64 @@
+.list-complete-item {
+    transition: all 1s;
+    display: inline-block;
+}
+  
+.list-complete-enter, .list-complete-leave-to
+{
+    opacity: 0;
+    transform: translateY(30px);
+}
+  
+.list-complete-leave-active {
+    position: absolute;
+}
+  
+.letter {
+    border: 1px black solid;
+    font-weight: bold;
+    padding: 0.5em;
+    background-color: white;
+
+    @apply text-base sm:text-lg lg:text-xl;
+}
+  
+.letter:nth-child(even) {
+    border: none;
+    border-bottom: 1px black solid;
+    border-top: 1px black solid;
+}
+
+.letter:last-child {
+    border-right: 1px black solid;
+}
+
+.warning {
+    display: none;
+}
+
+.showWarning {
+    background-color: rgba(220, 0, 0, 0.8);
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+    padding: 1em;
+    width: 500px;
+    
+    @apply mt-5;
+}
+
+.show-warning-enter-active {
+    transition: all .8s ease;
+}
+
+.show-warning-leave-active {
+transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.show-warning-enter, .show-warning-leave-to
+{
+transform: translateX(-20px);
+opacity: 0;
+}
+ 

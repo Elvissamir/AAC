@@ -17,7 +17,6 @@
                 
                 <!-- Algorithm routes --> 
                 <router-link class="nav-link" :to="{ name: 'Algorithms' }">Algorithms</router-link>
-                <router-link class="nav-link" :to="{ name: 'Anagram' }">Anagram</router-link>
 
                 <!-- Challenges routes --> 
                 <router-link class="nav-link" :to="{ name: 'Challenges' }">Challenges</router-link>

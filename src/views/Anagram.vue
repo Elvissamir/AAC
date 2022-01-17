@@ -8,7 +8,7 @@
                 </p>
                 <p class="mt-2">E.g: Cinema, formed from iceman</p>
             </div>
-            <div class="form-wrapper">
+            <div class="form-wrapper flex-col md:flex-row md:justify-between md:items-end">
                 <div class="input-form">
                     <div class="form-field sm:w-5/12 sm:mr-auto md:mr-5">
                         <label class="form-label" for="stra">First Word </label>
@@ -20,7 +20,7 @@
                         <input class="form-input" id="strb" type="text" v-model="strb" @keyup='updateWord'>
                     </div>
                 </div>
-                <button class="form-button button action-button mt-5" @click='anagram'>Go!</button>
+                <button class="button action-button mt-5 md:w-2/12" @click='anagram'>Go!</button>
             </div>
             
             <div class="actions-container flex-col">

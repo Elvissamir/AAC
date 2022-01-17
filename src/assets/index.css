@@ -4,9 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* app styles */
+/* App Styles */
 @import './general.css';
 @import './nav.css';
 @import './mobilemenu.css';
 @import './form.css';
+
+/* Challenges */
+@import './challenges.css';
 @import './anagram.css';
