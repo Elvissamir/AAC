@@ -6,7 +6,7 @@
                 <p>
                     An Anagram is a word, phrase, or name formed by rearranging the letters of another.
                 </p>
-                <p class="mt-2">Ex: Cinema, formed from iceman</p>
+                <p class="mt-2">E.g: Cinema, formed from iceman</p>
             </div>
             <div class="form-wrapper">
                 <div class="input-form">
