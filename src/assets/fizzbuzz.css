@@ -1,0 +1,44 @@
+
+.result-list {
+    list-style: none;
+}
+
+.result-list-item {
+    border: 1px black solid;
+    font-weight: bold;
+    padding: 0.5em;
+    text-align: center;
+    width: 118px;
+
+    @apply text-base sm:text-lg lg:text-xl bg-white;
+}
+
+.buzz {
+    color: black;
+    font-style: italic;
+}
+
+.fizz {
+    color: goldenrod;
+    font-style: italic;
+}
+
+.fizzbuzz {
+    color: orange;
+    font-style: italic;
+}
+
+.number {
+    color: mediumslateblue;
+}
+
+.result-list-enter, .result-list-leave-to
+/* .list-complete-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.result-list-enter-to {
+    transition: all 0.5s;
+    opacity: 1;
+}

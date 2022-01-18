@@ -17,9 +17,8 @@
     border: 1px black solid;
     font-weight: bold;
     padding: 0.5em;
-    background-color: white;
 
-    @apply text-base sm:text-lg lg:text-xl;
+    @apply text-base sm:text-lg lg:text-xl bg-white;
 }
   
 .letter:nth-child(even) {
@@ -45,7 +44,7 @@
     padding: 1em;
     width: 500px;
     
-    @apply mt-5;
+    @apply mt-6 mx-auto text-center;
 }
 
 .show-warning-enter-active {

@@ -1,5 +1,5 @@
 <template>
-      <footer class="bg-gray-800 w-full ml-auto mb-14 lg:mb-0 2xl:w-9/12">
+      <footer class="bg-gray-800 w-full ml-auto mb-14 lg:mb-0">
         <div class="flex font-lora flex-col w-10/12 mx-auto py-8 text-white">
 
             <!-- LINKS -->

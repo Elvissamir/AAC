@@ -17,7 +17,7 @@
                 <button class="button action-button mt-5 md:w-2/12" @click='findVowels'>Go!</button>
             </div>
             
-            <div class="actions-container flex-col">
+            <div class="actions-container flex-col w-full lg:w-8/12">
                 <transition-group name="list-complete" tag="p" class='word'>
                     <span
                     v-for="(item, index) in vowelsCount"
