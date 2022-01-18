@@ -31,6 +31,25 @@
     border-right: 1px black solid;
 }
 
+.result {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0.5em; 
+
+    @apply mt-5;
+}
+
+.yes{
+    background-color: rgba(0, 250, 20, 0.8);
+}
+
+.no {
+    background-color: rgba(250, 20, 0, 0.8);
+} 
+
 .warning {
     display: none;
 }
@@ -42,7 +61,6 @@
     font-weight: bold;
     display: block;
     padding: 1em;
-    width: 500px;
     
     @apply mt-6 mx-auto text-center;
 }

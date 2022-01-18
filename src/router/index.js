@@ -9,6 +9,8 @@ import About from '../views/About.vue'
 import Anagram from '../views/Anagram.vue'
 import Findvowels from '../views/Findvowels.vue'
 import Fizzbuzz from '../views/Fizzbuzz.vue'
+import Maxchars from '../views/Maxchars.vue'
+import Palindrome from '../views/Palindrome.vue'
 
 const routes = [
   {
@@ -45,6 +47,16 @@ const routes = [
     path: '/fizzbuzz',
     name: 'Fizzbuzz',
     component: Fizzbuzz
+  },
+  {
+    path: '/maxchars',
+    name: 'Maxchars',
+    component: Maxchars
+  },
+  {
+    path: '/palindrome',
+    name: 'Palindrome',
+    component: Palindrome,
   }
 ]
 
