@@ -41,20 +41,21 @@
                     {{ letterb }}
                     </span>
                 </transition-group>
+                
+                <transition name='show-result'>
+                    <div class="result" v-if='showResult' v-bind:class='[(isAnagram)? ya : na]'>
+                        <p v-if="isAnagram">YES!!</p>
+                        <p v-else>NO, It's Not</p>
+                    </div>
+                </transition>
+                
+                <transition name='show-warning'>
+                    <div class="warning" v-if='showWarning' v-bind:class='{ showWarning: showWarning }'>
+                        <p>{{ warningMessage }}</p>
+                    </div>
+                </transition>
             </div>
             
-            <transition name='show-result'>
-                <div class="result" v-if='showResult' v-bind:class='[(isAnagram)? ya : na]'>
-                    <p v-if="isAnagram">YES!!</p>
-                    <p v-else>NO, It's Not</p>
-                </div>
-            </transition>
-            
-            <transition name='show-warning'>
-                <div class="warning" v-if='showWarning' v-bind:class='{ showWarning: showWarning }'>
-                    <p>{{ warningMessage }}</p>
-                </div>
-            </transition>
         </div>
     </div>
 </template>

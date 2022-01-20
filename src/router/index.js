@@ -11,6 +11,7 @@ import Findvowels from '../views/Findvowels.vue'
 import Fizzbuzz from '../views/Fizzbuzz.vue'
 import Maxchars from '../views/Maxchars.vue'
 import Palindrome from '../views/Palindrome.vue'
+import StringReversal from '../views/StringReversal.vue'
 
 const routes = [
   {
@@ -57,6 +58,11 @@ const routes = [
     path: '/palindrome',
     name: 'Palindrome',
     component: Palindrome,
+  },
+  {
+    path: '/stringreversal',
+    name: 'StringReversal',
+    component: StringReversal,
   }
 ]
 

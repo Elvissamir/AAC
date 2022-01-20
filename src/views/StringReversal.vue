@@ -4,7 +4,7 @@
             <h1 class="title">{{ title }}</h1>
             <div class="explanation">
                 <p>
-                    Write one word, and you'll get the vowel's count as result!. E.g: Chocolate has: 2 o, 1 a and 1 e. That's 4 vowels.
+                    Write a word and click to reverse it!.
                 </p>
             </div>
             <div class="form-wrapper flex-col sm:flex-row sm:justify-between sm:items-end">
@@ -14,28 +14,22 @@
                         <input class="form-input" id="str" type="text" v-model="str" @keyup='updateWord'>
                     </div>
                 </div>
-                <button class="button action-button mt-5 md:w-2/12" @click='findVowels'>Go!</button>
+                <button class="button action-button mt-5 md:w-2/12" @click='reverseWord'>Reverse</button>
             </div>
             
             <div class="actions-container flex-col w-full lg:w-8/12">
-                <transition-group name="list-complete" tag="p" class='word'>
+                <transition-group name="list-complete" tag="p" class='word mt-4'>
                     <span
-                    v-for="(item, index) in vowelsCount"
-                    :key="index"
-                    class="list-complete-item letter">
-                        <p>{{ item.vowel }} = {{ item.count }}</p>
+                        v-for="letter in word"
+                        :key="letter"
+                        class="list-complete-item letter">
+                        {{ letter }}
                     </span>
                 </transition-group>
 
-                <transition-group name="list-complete" tag="p" class='word mt-6'>
-                    <span
-                    v-for="letter in word"
-                    :key="letter"
-                    class="list-complete-item letter">
-                        <p v-if="letter == ' '">_</p>
-                        <p v-else>{{ letter }}</p>
-                    </span>
-                </transition-group>
+                <span class="mt-5 text-center font-black tracking-widest text-indigo-900 bg-white border border-black text-2xl p-4">
+                    {{ wordReversed }}
+                </span>
 
                 <transition name='show-warning'>
                     <div class="warning" v-if='showWarning' v-bind:class='{ showWarning: showWarning }'>
@@ -56,17 +50,10 @@ export default {
     setup() {
 
         // Properties
-        const title = 'Find and Count Vowels';
+        const title = 'String Reversal';
         const str = ref('')
         const word = ref([])
-        const initialVowelsCount =  [
-            {vowel: 'A', count: 0},
-            {vowel: 'E', count: 0},
-            {vowel: 'I', count: 0},
-            {vowel: 'O', count: 0},
-            {vowel: 'U', count: 0},
-        ]
-        const vowelsCount = ref(initialVowelsCount.map((item) => item))
+        const wordReversed = ref('')
         const showWarning = ref(false)
         const warningMessage = ref('')
 
@@ -97,47 +84,42 @@ export default {
             }
         
             word.value = str.value.toUpperCase().split('')
-
-            if (word.value.length == 0)
-                vowelsCount.value = []
+            wordReversed.value = ''
         }
 
-        const findVowels = () => {
-            vowelsCount.value = []
-        
-            const vowels = ['A', 'E', 'I', 'O', 'U'];
-
-            let vowelsObj = word.value.reduce(function (obj, letter) {
-                for (let vowel of vowels) {
-                    if (vowel == letter) {
-                        if (!obj[vowel])
-                            obj[vowel] = 1;
-                        else
-                            obj[vowel]++;
-                        break;
-                    }
-                }
-
-                return obj;
-            }, {});
-        
-            for (let vowel in vowelsObj) {
-                vowelsCount.value.push({
-                    'vowel': vowel,
-                    'count': vowelsObj[vowel]
-                });
+        const reverse = (wordarr) => {
+            const wr = [];
+            
+            for (let letter of wordarr) {
+                wr.unshift(letter); 
             }
+            
+            return wr;
         }
 
+        const reverseWord = () => {
+            
+            if(!validateStr()) {
+                showWarning.value = true;
+                return;   
+            }
+            else {
+                showWarning.value = false;
+            }
+
+            wordReversed.value = reverse(word.value).join('')
+            console.log(wordReversed)
+        }
+       
         return {
           title,
           str,
           word,
-          vowelsCount,
+          wordReversed,
+          reverseWord,
           showWarning,
           warningMessage,
           updateWord,
-          findVowels,
         }
     },
 }

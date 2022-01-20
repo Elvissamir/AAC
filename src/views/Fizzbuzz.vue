@@ -32,13 +32,14 @@
                     {{ item.val }}
                     </li>
                 </transition-group>
+                
+                <transition name='show-warning'>
+                    <div class="warning" v-if='showWarning' v-bind:class='{ showWarning: showWarning }'>
+                        <p>{{ warningMessage }}</p>
+                    </div>
+                </transition>
             </div>
             
-            <transition name='show-warning'>
-                <div class="warning" v-if='showWarning' v-bind:class='{ showWarning: showWarning }'>
-                    <p>{{ warningMessage }}</p>
-                </div>
-            </transition>
         </div>
     </div>
 </template>

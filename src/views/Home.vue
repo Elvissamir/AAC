@@ -5,5 +5,6 @@
         <router-link class="nav-link" :to="{ name: 'Fizzbuzz' }">Fizzbuzz</router-link>
         <router-link class="nav-link" :to="{ name: 'Maxchars' }">Maxchars</router-link>
         <router-link class="nav-link" :to="{ name: 'Palindrome' }">Palindrome</router-link>
+        <router-link class="nav-link" :to="{ name: 'StringReversal' }">String Reversal</router-link>
     </div>
 </template>
