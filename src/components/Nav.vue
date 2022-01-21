@@ -20,7 +20,6 @@
 
                 <!-- Challenges routes --> 
                 <router-link class="nav-link" :to="{ name: 'Challenges' }">Challenges</router-link>
-                <router-link class="nav-link" :to="{ name: 'About' }">About</router-link>
             </div>
         </div>
     </nav>

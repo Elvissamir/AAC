@@ -12,6 +12,7 @@ import Fizzbuzz from '../views/Fizzbuzz.vue'
 import Maxchars from '../views/Maxchars.vue'
 import Palindrome from '../views/Palindrome.vue'
 import StringReversal from '../views/StringReversal.vue'
+import BinaryTree from '../views/BinaryTree.vue'
 
 const routes = [
   {
@@ -63,6 +64,11 @@ const routes = [
     path: '/stringreversal',
     name: 'StringReversal',
     component: StringReversal,
+  },
+  {
+    path: '/binaryTree',
+    name: 'BinaryTree',
+    component: BinaryTree,
   }
 ]
 
