@@ -12,7 +12,7 @@
             </div>
 
             <!-- MENU LINKS -->
-            <div class="flex flex-col justify-center items-center mt-3 w-6/12 mx-auto lg:flex-row lg:mx-0 lg:w-8/12 lg:justify-between lg:max-w-screen-md lg:mt-2">
+            <div class="flex flex-col justify-center items-center mt-3 w-6/12 mx-auto lg:flex-row lg:mx-0 lg:w-8/12 lg:justify-between lg:max-w-lg lg:mt-2">
                 <router-link class="nav-link" :to="{ name: 'Home' }">Home</router-link>
                 
                 <!-- Algorithm routes --> 

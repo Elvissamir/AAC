@@ -7,14 +7,14 @@
                     Enter the value of the node and decide if you want to add it to the tree or remove it. (Click the Reset button to start over)
                 </p>
             </div>
-            <div class="form-wrapper flex-col sm:justify-between">
+            <div class="form-wrapper flex-col sm:justify-between lg:flex-row">
                 <div class="input-form">
                     <div class="form-field sm:w-10/12">
                         <label class="form-label" for="numInput">Enter a number</label>
                         <input class="form-input" id="numInput" type="text" v-model="numStr" @keyup.enter='insert'>
                     </div>
                 </div>
-                <div class="buttons flex flex-col mt-5 sm:flex-row sm:items-center">
+                <div class="buttons flex flex-col mt-5 sm:flex-row sm:items-center lg:items-end">
                     <button class="button action-button" @click="insert">Insert</button>
                     <button class="button action-button mt-2 sm:mt-0 sm:ml-2" @click="remove">Remove</button>
                     <button class="button action-button mt-2 sm:mt-0 sm:ml-2" @click="reset">Reset</button>
@@ -57,6 +57,8 @@ export default {
         const showWarning = ref(false)
         const warningMessage = ref('')
         const tree = ref([])
+        const maxLevels = 5
+        let levelCount = 0
         let num = null
         let bst = new BinarySearchTree()
 
@@ -94,7 +96,12 @@ export default {
 
         const insert = () => {
             if (!validateInput(['num']))
-            return;
+                return;
+
+            if (num > 99 || num < -99) {
+                warning('Add numbers between -99 to 99 so it looks nice ;)')
+                return
+            }
         
             showWarning.value = false;
             
