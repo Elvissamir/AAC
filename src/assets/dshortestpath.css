@@ -1,71 +1,69 @@
+.grid-container {
+    background-color: rgba(86, 92, 89, 0.8);
+    border: 1px black solid;
+    display: grid;
+    grid-template-columns: repeat(7, minmax(20px, 1fr));
+    grid-template-rows: repeat(12, 25px);
+    min-width: 210px;
+    width: 100%;
 
-  .grid-container {
-      background-color: rgba(220, 220, 220, 0.9);
-      border: 1px rgba(200, 200, 200, 0.9) solid;
-      display: grid;
-      grid-template-columns: repeat(7, minmax(20px, 1fr));
-      grid-template-rows: repeat(12, 25px);
-      min-width: 210px;
-      width: 100%;
-      max-width: 300px;
-  }
-  
-  
-  .square {
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      width: 100%;
-  }
-  
-  .from, .to {
-      background-color: goldenrod;
-  }
-  
-  
-  .letter, .link {
-       border: 1px rgba(200, 200, 200, 0.9) solid;
-  }
-  
-  .letter {
-      color: white;
-      font-weight: bold;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      width: 100%;
-  }
-  
-  .selected {
-      background-color: goldenrod;
-  }
-  
-  .un-selected{
-      background-color: rgba(0, 150, 200, 0.7);
-  }
-  
-  
-  .link {
-      color: white;
-      font-weight: bold;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      width: 100%;
-  }
-  
-  .info-link{
-      background-color: black;
-  }
-  
-  .simple-link {
-      color: white;
-      background-color: black;
-  }
-  
-  .result{
-      background-color: rgba(0, 220, 100, 0.8);
-  }
-  
+    @apply max-w-xs lg:max-w-lg;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.from, .to {
+    background-color: var(--brand-dark-color);
+}
+
+
+.lttr, .link {
+     border: 1px black solid;
+}
+
+.lttr {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.selected {
+    background-color: var(--brand-dark-color);
+}
+
+.un-selected{
+    background-color: rgba(49, 193, 241, 0.7);
+}
+
+.link {
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.info-link{
+    background-color: white;
+}
+
+.simple-link {
+    color: black;
+    background-color: white;
+}
+
+.result{
+    background-color: var(--brand-dark-color);
+}

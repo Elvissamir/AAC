@@ -70,6 +70,11 @@ const routes = [
     path: '/binaryTree',
     name: 'BinaryTree',
     component: BinaryTree,
+  },
+  {
+    path: '/shortestPath',
+    name: 'ShortestPath',
+    component: ShortestPath,
   }
 ]
 

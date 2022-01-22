@@ -17,7 +17,7 @@
 }
 
 .form-input {
-    @apply font-lora font-black w-full shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight;
+    @apply bg-white font-lora font-black w-full shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight;
 }
 
 .form-textarea {

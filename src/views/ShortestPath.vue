@@ -67,7 +67,7 @@
                             
                             <div 
                             v-else-if="nodesPosition[item] && selectedLinks.includes(item)" 
-                            class="letter"
+                            class="lttr"
                             :class="(from == nodesPosition[item] || 
                                         to == nodesPosition[item])? 'from' : 'selected'">
                                 {{ nodesPosition[item] }}
@@ -75,7 +75,7 @@
                             
                             <div 
                             v-else-if="nodesPosition[item]" 
-                            class="letter"
+                            class="lttr"
                             :class="(from == nodesPosition[item] || 
                                         to == nodesPosition[item])? 'from' : 'un-selected'">
                                 {{ nodesPosition[item] }}
@@ -187,7 +187,7 @@ export default {
             optionsb.value = availableOptions.map((item) => item)
 
             let max = squaresCount
-            
+
             function generateSquares(max, arr) {
                 let i = 1;
 
@@ -226,35 +226,35 @@ export default {
             for (let i = 0; i < nodes.length - 1; i++) {
                 
                 if (nodes[i] == 'A' && nodes[i+1] == "B") {
-                    squares = squares.concat([2, 3, 4]);
+                    squares = squares.concat([1, 2, 3, 4, 5]);
                 }
                 
                 else if (nodes[i] == 'B' && nodes[i+1] == "A") {
-                    squares = squares.concat([2, 3, 4].reverse());
+                    squares = squares.concat([1, 2, 3, 4, 5].reverse());
                 }
                 
                 else if (nodes[i] == 'A' && nodes[i+1] == "C") {
-                    squares = squares.concat([8, 15, 22]);
+                    squares = squares.concat([1, 8, 15, 22]);
                 }
                 
                 else if (nodes[i] == 'C' && nodes[i+1] == "A") {
-                    squares = squares.concat([8, 15, 22].reverse());
+                    squares = squares.concat([1, 8, 15, 22].reverse());
                 }
                 
                 else if (nodes[i] == 'A' && nodes[i+1] == "D") {
-                    squares = squares.concat([9, 17, 25]);
+                    squares = squares.concat([1, 9, 17, 25, 33]);
                 }
             
                 else if (nodes[i] == 'D' && nodes[i+1] == "A") {
-                    squares = squares.concat([9, 17, 25].reverse());
+                    squares = squares.concat([1, 9, 17, 25, 33].reverse());
                 }
                 
                 else if (nodes[i] == 'B' && nodes[i+1] == "D") {
-                    squares = squares.concat([12, 19, 26]);
+                    squares = squares.concat([5, 12, 19, 26]);
                 }
                 
                 else if (nodes[i] == 'D' && nodes[i+1] == "B") {
-                    squares = squares.concat([12, 19, 26].reverse());
+                    squares = squares.concat([5, 12, 19, 26].reverse());
                 }
                 
                 else if (nodes[i] == 'B' && nodes[i+1] == "E") {
@@ -368,10 +368,12 @@ export default {
                     if (squares.length > 0) {
                         sl.push(squares[0]);
                         squares.shift();
-                        setTimeout(nextIteration, 500);
+                        setTimeout(nextIteration, 250);
                     }
                 })(); 
             }
+
+            console.log(squares)
 
             addSelectedLinks(squares, selectedLinks.value);   
         }
