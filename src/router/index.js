@@ -13,6 +13,7 @@ import Maxchars from '../views/Maxchars.vue'
 import Palindrome from '../views/Palindrome.vue'
 import StringReversal from '../views/StringReversal.vue'
 import BinaryTree from '../views/BinaryTree.vue'
+import ShortestPath from '../views/ShortestPath.vue'
 
 const routes = [
   {
