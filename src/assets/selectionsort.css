@@ -1,0 +1,5 @@
+.steps-title, .result-title {
+    color: var(--brand-dark-color);
+
+    @apply text-lg font-black mt-5;
+}

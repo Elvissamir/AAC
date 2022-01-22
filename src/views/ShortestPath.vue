@@ -130,11 +130,11 @@ export default {
             J: {E: 1, F: 5, X: 6},
             X: {H: 2, I: 8, J: 6},
         }
-        const linksPosition = [
+        const linksPosition = ref([
             2,4,8,12,22,9,25,26,28,30,32,
             42,56,44,45,47,48,50,57,63,64,70,77,72,74, 84, 88, 90
-        ]
-        const nodesPosition = {
+        ])
+        const nodesPosition = ref({
             1: 'A',
             5: 'B',
             21: 'E',
@@ -146,8 +146,8 @@ export default {
             75: 'H',
             87: 'I', 
             91: 'X',
-        }
-        const infoLinks = {
+        })
+        const infoLinks = ref({
             3: 3,
             13: 1,
             27: 5,
@@ -165,7 +165,7 @@ export default {
             81: 1,
             79: 3,
             73: 1,
-        }
+        })
         const squaresCount = 91
         const dsp = new Dsp()
         const from = ref('')
@@ -195,7 +195,7 @@ export default {
                     if (i <= max) {
                         arr.push(i);
                         i++;
-                        setTimeout(nextIteration, 100);
+                        setTimeout(nextIteration, 1);
                     }
                 })(); 
             }

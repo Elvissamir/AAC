@@ -14,6 +14,7 @@ import Palindrome from '../views/Palindrome.vue'
 import StringReversal from '../views/StringReversal.vue'
 import BinaryTree from '../views/BinaryTree.vue'
 import ShortestPath from '../views/ShortestPath.vue'
+import SelectionSort from '../views/SelectionSort.vue'
 
 const routes = [
   {
@@ -75,6 +76,11 @@ const routes = [
     path: '/shortestPath',
     name: 'ShortestPath',
     component: ShortestPath,
+  },
+  {
+    path: '/selectionSort',
+    name: 'SelectionSort',
+    component: SelectionSort,
   }
 ]
 

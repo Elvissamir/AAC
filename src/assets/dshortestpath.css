@@ -46,7 +46,7 @@
 }
 
 .link {
-    color: black;
+    color: goldenrod;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -60,7 +60,7 @@
 }
 
 .simple-link {
-    color: black;
+    color: goldenrod;
     background-color: white;
 }
 
