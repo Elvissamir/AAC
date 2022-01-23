@@ -373,8 +373,6 @@ export default {
                 })(); 
             }
 
-            console.log(squares)
-
             addSelectedLinks(squares, selectedLinks.value);   
         }
 

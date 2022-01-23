@@ -31,6 +31,10 @@
     border-right: 1px black solid;
 }
 
+.text {
+    color: var(--brand-dark-color);
+}
+
 .result {
     color: white;
     display: flex;
@@ -40,6 +44,30 @@
     padding: 0.5em; 
 
     @apply mt-5;
+}
+
+.showResult {
+    background-color: rgba(50, 50, 50, 0.8);
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+    padding: 1em;
+    width: 500px;
+}
+
+.show-result-enter-active {
+    transition: all .8s ease;
+}
+
+.show-result-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.show-result-enter, .show-result-leave-to
+{
+  transform: translateX(-20px);
+  opacity: 0;
 }
 
 .yes{

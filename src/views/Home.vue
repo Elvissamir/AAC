@@ -8,6 +8,7 @@
         <router-link class="nav-link" :to="{ name: 'StringReversal' }">String Reversal</router-link>
         <router-link class="nav-link" :to="{ name: 'BinaryTree' }">Binary Search Tree</router-link>
         <router-link class="nav-link" :to="{ name: 'ShortestPath' }">Shortest Path</router-link>
-         <router-link class="nav-link" :to="{ name: 'SelectionSort' }">Selection Sort</router-link>
+        <router-link class="nav-link" :to="{ name: 'SelectionSort' }">Selection Sort</router-link>
+        <router-link class="nav-link" :to="{ name: 'LinkedList' }">Linked List</router-link>
     </div>
 </template>

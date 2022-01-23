@@ -18,7 +18,7 @@
 
 .content {
     max-width: 1000px;
-    @apply pt-6 w-10/12 mx-auto lg:pt-24;
+    @apply pt-6 w-10/12 mx-auto min-h-screen lg:pt-24;
 }
 
 .title {

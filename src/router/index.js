@@ -15,6 +15,7 @@ import StringReversal from '../views/StringReversal.vue'
 import BinaryTree from '../views/BinaryTree.vue'
 import ShortestPath from '../views/ShortestPath.vue'
 import SelectionSort from '../views/SelectionSort.vue'
+import LinkedList from '../views/LinkedList.vue'
 
 const routes = [
   {
@@ -81,6 +82,11 @@ const routes = [
     path: '/selectionSort',
     name: 'SelectionSort',
     component: SelectionSort,
+  },
+  {
+    path: '/linkedList',
+    name: 'LinkedList',
+    component: LinkedList,
   }
 ]
 
