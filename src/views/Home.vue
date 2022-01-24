@@ -11,4 +11,25 @@
         <router-link class="nav-link" :to="{ name: 'SelectionSort' }">Selection Sort</router-link>
         <router-link class="nav-link" :to="{ name: 'LinkedList' }">Linked List</router-link>
     </div>
+
+    <div class="main-content-wrapper">
+        <div class="content">
+            <h1 class="title">AAC</h1>
+            <h2 class=" text-indigo-900 font-black font-playfair">Algorithms And Challenges</h2>
+            <div class="explanation">
+                <p class=" text-indigo-900 font-black font-lora">AAC is a collection of algorithms and challenges with UI that allows user interaction.</p>    
+            </div>
+            <!-- Algorithms -->
+            <div class="flex">
+                <p class=" text-indigo-900 font-black font-lora">Algorithms</p>
+                
+            </div>
+
+            <!-- Challenges -->
+            <div class="flex">
+
+            </div>
+        </div>
+    </div>
 </template>
+

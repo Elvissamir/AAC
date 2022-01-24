@@ -1,5 +1,5 @@
 <template>
-     <div class="main-content-wrapper">
+    <div class="main-content-wrapper">
         <div class="content">
             <h1 class="title">{{ title }}</h1>
             <div class="explanation">
@@ -28,8 +28,9 @@
                         v-for="(level, idxb) in tree"
                         :key="idxb"
                         class="list-complete-item level">
-                            <div class="node" v-for="(item, i) in level" :key="i">
-                                {{ item }}
+                            <div class="flex" v-for="(item, i) in level" :key="i">
+                                <div class="empty" v-if="item == '-'"></div>
+                                <div class="node" v-else>{{ item }}</div>
                             </div>
                         </div>
                     </transition-group>
@@ -47,7 +48,7 @@
 
 <script>
 import { ref } from 'vue'
-import BinarySearchTree from '../composables/BinarySearchTree'
+import BinarySearchTree from '../algorithms/BinarySearchTree'
 
 export default {
     setup() {

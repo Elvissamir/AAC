@@ -7,7 +7,7 @@
                     <p class="text-5xl text-center mx-auto w-12 h-8 lg:text-4xl">
                         <font-awesome-icon :icon="['fab', 'github-square']" />
                     </p>
-                    <p class="text-lg sm:text-blue-300 md:text-blue-600 lg:text-blue-800 xl:text-green-900 2xl:text-red-900 mt-3 lg:mt-1 lg:text-xl">Check my Github</p>
+                    <p class="text-lg text-indigo-900 mt-3 lg:mt-1 lg:text-xl">Check my Github</p>
                 </a>
             </div>
 
