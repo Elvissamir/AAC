@@ -35,6 +35,18 @@
     @apply flex mt-12 mx-auto justify-between items-center;
 }
 
+.preview-section {
+    @apply mt-2 flex flex-col w-full;
+}
+
+.preview-image {
+    display: flex;
+    max-width: 450px;
+    min-width: 250px;
+
+    @apply w-full;
+}
+
 /* BUTTON */
 .button {
     @apply font-lora text-lg font-black rounded-md px-4 py-2 sm:text-xl;

@@ -45,17 +45,17 @@ const routes = [
   },
   {
     path: '/findvowels',
-    name: 'Findvowels',
+    name: 'FindVowels',
     component: Findvowels,
   },
   {
     path: '/fizzbuzz',
-    name: 'Fizzbuzz',
+    name: 'FizzBuzz',
     component: Fizzbuzz
   },
   {
     path: '/maxchars',
-    name: 'Maxchars',
+    name: 'MaxChars',
     component: Maxchars
   },
   {
