@@ -11,5 +11,18 @@
 
     max-width: 150px;
     
-    @apply text-lg text-indigo-800 font-lora font-black text-center mt-4 lg:h-8 lg:text-xl 2xl:mx-auto 2xl:w-40 hover:text-gray-800 hover:underline;
+    @apply text-lg text-indigo-900 font-lora font-black text-center mt-4 lg:h-8 lg:text-xl 2xl:mx-auto 2xl:w-40 hover:text-gray-800 hover:underline;
+}
+
+.nav-link:hover {
+    color: var(--brand-light-color);
+    text-decoration: none;
+}
+
+.github-link {
+    @apply flex text-indigo-900 font-bold mx-auto justify-center mt-8 lg:mx-0 lg:mt-3; 
+}
+
+.github-link:hover {
+    color: var(--brand-light-color);
 }

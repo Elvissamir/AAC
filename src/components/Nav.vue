@@ -2,12 +2,12 @@
     <nav class="bg-white w-full nav transform transition-all" :class="[(show)? 'translate-x-0' : '-translate-x-full']">
         <div class="flex flex-col w-full h-screen lg:flex-row lg:h-auto lg:py-2 lg:px-4 lg:justify-around">
             <!-- GITHUB LINK -->
-            <div class="flex text-indigo-900 font-bold mx-auto justify-center mt-8 lg:mx-0 lg:mt-3">
+            <div class="github-link">
                 <a class="flex flex-col font-black items-baseline" href="https://github.com/Elvissamir">
                     <p class="text-5xl text-center mx-auto w-12 h-8 lg:text-4xl">
                         <font-awesome-icon :icon="['fab', 'github-square']" />
                     </p>
-                    <p class="text-lg text-indigo-900 mt-3 lg:mt-1 lg:text-xl">Check my Github</p>
+                    <p class="text-lg mt-3 lg:mt-1 lg:text-xl">Check my Github</p>
                 </a>
             </div>
 

@@ -2,28 +2,33 @@
     <div class="main-content-wrapper">
         <div class="content">
             <h1 class="title">AAC</h1>
-            <h2 class="text-2xl text-center text-indigo-900 font-black font-playfair mt-3">Algorithms And Challenges</h2>
+            <h2 class="text-2xl text-center text-indigo-900 font-black font-playfair mt-3 md:text-3xl">Algorithms And Challenges</h2>
+            <div class="mx-auto w-6 h-1 bg-indigo-900 mt-3"></div>
             <div class="w-full text-center">
-                <p class="text-xl text-indigo-900 font-black font-lora mt-6">AAC is a collection of algorithms and challenges with UI that allows user interaction.</p>    
+                <p class="text-xl text-indigo-900 font-black font-lora mt-6 lg:text-2xl">AAC is a collection of algorithms and challenges with UI that allows user interaction.</p>    
             </div>
             <!-- Algorithms -->
-            <div class="flex flex-col mt-10">
-                <p class="text-2xl text-indigo-900 text-center font-black font-lora">Algorithms</p>
+            <div class="flex flex-col mt-12">
+                <p class="text-2xl text-indigo-900 text-center font-black font-lora md:text-3xl">Algorithms</p>
                 <div class="preview-section">
                     <router-link v-for="(algorithm, i) in algorithms" :key="i" class="preview-link" :to="{ name: algorithm.routeName }">
-                        <p class="text-indigo-900 text-center text-xl  font-lora font-black">{{ algorithm.title }}</p>
-                        <img class="preview-image mt-2" :src="algorithm.imageUrl" alt="Linked List">
+                        <div class="preview-overlay">
+                            <p class="preview-text">{{ algorithm.title }}</p>
+                        </div>
+                        <img class="preview-image" :src="algorithm.imageUrl" alt="Linked List">
                     </router-link>
                 </div>
             </div>
 
             <!-- Challenges -->
-            <div class="flex flex-col mt-10">
-                <p class="text-2xl text-indigo-900 text-center font-black font-lora">Challenges</p>
+            <div class="flex flex-col mt-12">
+                <p class="text-2xl text-indigo-900 text-center font-black font-lora md:text-3xl">Challenges</p>
                 <div class="preview-section">
                     <router-link v-for="(challenge, i) in challenges" :key="i" class="preview-link" :to="{ name: challenge.routeName }">
-                        <p class="text-indigo-900 text-center text-xl  font-lora font-black">{{ challenge.title }}</p>
-                        <img class="preview-image mt-2" :src="challenge.imageUrl" alt="Linked List">
+                        <div class="preview-overlay">
+                            <p class="preview-text">{{ challenge.title }}</p>
+                        </div>
+                        <img class="preview-image" :src="challenge.imageUrl" alt="Linked List">
                     </router-link>
                 </div>
             </div>
@@ -57,4 +62,3 @@ export default {
     },
 }
 </script>
-
