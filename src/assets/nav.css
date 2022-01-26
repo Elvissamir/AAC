@@ -20,7 +20,7 @@
 }
 
 .github-link {
-    @apply flex text-indigo-900 font-bold mx-auto justify-center mt-8 lg:mx-0 lg:mt-3; 
+    @apply flex text-indigo-900 font-bold mx-auto justify-center lg:mx-0 lg:mt-3; 
 }
 
 .github-link:hover {

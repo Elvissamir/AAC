@@ -3,7 +3,7 @@
         <div class="flex flex-col w-full h-screen lg:flex-row lg:h-auto lg:py-2 lg:px-4 lg:justify-around">
             <!-- GITHUB LINK -->
             <div class="github-link">
-                <a class="flex flex-col font-black items-baseline" href="https://github.com/Elvissamir">
+                <a class="flex flex-col font-black items-baseline pt-12 lg:pt-0" href="https://github.com/Elvissamir">
                     <p class="text-5xl text-center mx-auto w-12 h-8 lg:text-4xl">
                         <font-awesome-icon :icon="['fab', 'github-square']" />
                     </p>
