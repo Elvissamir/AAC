@@ -10,34 +10,25 @@
             <!-- Algorithms -->
             <div class="flex flex-col mt-24">
                 <p class="text-2xl text-indigo-900 text-center font-black font-lora md:text-3xl">Algorithms</p>
-                <div class="preview-section">
-                    <router-link v-for="(algorithm, i) in algorithms" :key="i" class="preview-link" :to="{ name: algorithm.routeName }">
-                        <div class="preview-overlay">
-                            <p class="preview-text">{{ algorithm.title }}</p>
-                        </div>
-                        <img class="preview-image" :src="algorithm.imageUrl" alt="Linked List">
-                    </router-link>
-                </div>
+                <PreviewSection :elements="algorithms"></PreviewSection>
             </div>
 
             <!-- Challenges -->
             <div class="flex flex-col mt-24">
                 <p class="text-2xl text-indigo-900 text-center font-black font-lora md:text-3xl">Challenges</p>
-                <div class="preview-section">
-                    <router-link v-for="(challenge, i) in challenges" :key="i" class="preview-link" :to="{ name: challenge.routeName }">
-                        <div class="preview-overlay">
-                            <p class="preview-text">{{ challenge.title }}</p>
-                        </div>
-                        <img class="preview-image" :src="challenge.imageUrl" alt="Linked List">
-                    </router-link>
-                </div>
+                <PreviewSection :elements="challenges"></PreviewSection>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import PreviewSection from '../components/PreviewSection.vue'
+
 export default {
+    components: {
+        PreviewSection,
+    },
     setup() {
         const algorithms = [
             {routeName: 'BinaryTree', title: 'Binary Tree', imageUrl: 'imgs/binarytree_c.png'},
