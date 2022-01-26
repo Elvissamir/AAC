@@ -1,11 +1,12 @@
 <template>
     <div class="preview-section">
-        <router-link v-for="(element, i) in elements" :key="i" class="preview-link" :to="{ name: element.routeName }">
+        <div v-for="(element, i) in elements" :key="i" class="preview-link">
             <div class="preview-overlay">
                 <p class="preview-text">{{ element.title }}</p>
+                <router-link :to="{ name: element.routeName }" class="button action-button mt-3">Visit</router-link>
             </div>
             <img class="preview-image" :src="element.imageUrl" alt="Linked List">
-        </router-link>
+        </div>
     </div>
 </template>
 

@@ -72,7 +72,7 @@
     transition: 0.5s ease-in-out;
     top: 0%;
     left: 0%;
-    @apply flex absolute justify-center items-center opacity-0 w-full h-full bg-indigo-900;
+    @apply flex flex-col absolute justify-center items-center opacity-0 w-full h-full bg-indigo-900;
 }
 
 .preview-text {
@@ -93,5 +93,5 @@
 .action-button {
 
     background-color: var(--brand-light-color);
-    @apply text-white font-black hover:bg-gray-800;
+    @apply text-white border-2 border-white font-black hover:border-indigo-900 hover:bg-white hover:text-indigo-900;
 }
