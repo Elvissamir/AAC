@@ -26,6 +26,10 @@
     @apply pt-4 text-3xl text-center font-black font-playfair md:text-4xl lg:text-5xl lg:pt-24;
 }
 
+.line {
+    @apply mx-auto w-6 h-1 bg-indigo-900 mt-3 md:w-10;
+}
+
 .explanation {
     color: var(--brand-dark-color);
     @apply mt-8 w-10/12 text-lg mx-auto md:mt-16;

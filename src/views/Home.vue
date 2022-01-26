@@ -3,7 +3,7 @@
         <div class="content">
             <h1 class="title">AAC</h1>
             <h2 class="text-2xl text-center text-indigo-900 font-black font-playfair mt-3 md:text-3xl">Algorithms And Challenges</h2>
-            <div class="mx-auto w-6 h-1 bg-indigo-900 mt-3"></div>
+            <div class="line"></div>
             <div class="w-full text-center">
                 <p class="text-xl text-indigo-900 font-black font-lora mt-7 lg:text-2xl">AAC is a collection of algorithms and challenges with UI that allows user interaction.</p>    
             </div>
