@@ -266,8 +266,8 @@ module.exports = {
         '"Courier New"',
         'monospace'
       ],
-      'playfair': ['"Playfair Display"', 'cursive'],
-      'lora': ['lora', 'cursive']
+      'playfair': ['"Playfair Display"', 'serif'],
+      'lora': ['lora', 'serif']
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],

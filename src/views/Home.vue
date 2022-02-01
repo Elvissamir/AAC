@@ -38,7 +38,7 @@ export default {
         ]
 
         const challenges = [
-            {routeName: 'StringReversal', title: 'String Reversal', imageUrl: 'imgs/linkedlist_c.png'},
+            {routeName: 'StringReversal', title: 'String Reversal', imageUrl: 'imgs/stringreversal_c.png'},
             {routeName: 'Palindrome', title: 'Palindrome', imageUrl: 'imgs/palindrome_c.png'},
             {routeName: 'FizzBuzz', title: 'Fizz Buzz', imageUrl: 'imgs/fizzbuzz_c.png'},
             {routeName: 'FindVowels', title: 'Find Vowels', imageUrl: 'imgs/findvowels_c.png'},
