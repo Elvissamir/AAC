@@ -150,18 +150,31 @@ class LinkedList {
         let currentNode = this.head;
         let deleteNodeindex = this.indexOf(value);
         let index = 0;
-        
-        while (index < deleteNodeindex-1) {
-            currentNode = currentNode.next;
-            index++;
+
+        if (this.length > 1) {
+            while (index < deleteNodeindex-1) {
+                currentNode = currentNode.next;
+                index++;
+            }
+            
+            let deletedNode = currentNode.next;
+            
+            currentNode.next = deletedNode.next;
+            deletedNode.next = null;
+
+            this.length--;
+            return deletedNode;
         }
-        
-        let deletedNode = currentNode.next;
-        currentNode.next = deletedNode.next;
-        deletedNode.next = null;
-        
-        this.length--;
-        return deletedNode;
+        else if (this.length == 1) {
+
+            this.head = null;
+            
+            this.length--;
+            return currentNode;
+        }
+        else {
+            return null;
+        }
     }
     
     generateArr() {
