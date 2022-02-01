@@ -108,7 +108,6 @@ export default {
             }
 
             wordReversed.value = reverse(word.value).join('')
-            console.log(wordReversed)
         }
        
         return {

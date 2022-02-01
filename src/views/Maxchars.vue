@@ -84,9 +84,6 @@ export default {
         }
 
         const findMaxChar = () => {
-
-            console.log('Max char')
-        
             if(!validateStr()) {
                 showWarning.value = true;
                 return;
