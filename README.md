@@ -1,24 +1,17 @@
-# aacbase
+# AAC - Algorithms and Challenges
 
-## Project setup
-```
-npm install
-```
+AAC is a SPA that acts as an interface for algorithms like Dijkstra's shortest path and selection sort, data structures like binary trees and linked lists, and programming challenges: palindrome, string reversal, anagram, fizzbuzz, and many more.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Running with docker: 
+1 - Clone repository
 
-### Compiles and minifies for production
-```
-npm run build
+2 - Install npm dependencies: 
+
+```sh
+npm i
 ```
 
-### Lints and fixes files
+3 - Build containers with docker: 
 ```
-npm run lint
+sudo docker-compose up --build
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

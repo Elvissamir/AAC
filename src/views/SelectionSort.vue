@@ -10,7 +10,7 @@
             <div class="form-wrapper flex-col sm:flex-row sm:justify-between sm:items-end">
                 <div class="input-form">
                     <div class="form-field sm:w-10/12">
-                        <label class="form-label" for="numInput">Enter a word</label>
+                        <label class="form-label" for="numInput">Enter a number</label>
                         <input class="form-input" id="numInput" type="text" v-model="numStr" @keyup='updateWord'>
                     </div>
                 </div>

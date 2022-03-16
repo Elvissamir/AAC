@@ -12,26 +12,26 @@
                     <div class="flex items-baseline font-bold">
                         <p class="flex items-center text-lg sm:text-xl">
                             <font-awesome-icon :icon="['fas', 'envelope']" class="mr-2"/>
-                            Elvissamir18@gmail.com
+                            elvissam.software@gmail.com
                         </p>
                     </div>
                 </div>
 
                 <div class="flex justify-between mt-2 mx-auto text-lg font-black sm:text-2xl">
                     <div class="flex">
-                        <a href="">
+                        <a href="https://elvisportfolio.herokuapp.com/" target="_blank">
                             <font-awesome-icon :icon="['fas', 'globe']" size="lg"/>
                         </a>
                     </div>
                         
                     <div class="flex ml-3">
-                        <a href="https://github.com/Elvissamir">
+                        <a href="https://github.com/Elvissamir" target="_blank">
                             <font-awesome-icon :icon="['fab', 'github']" size="lg" />
                         </a>
                     </div>
 
                     <div class="flex ml-3">
-                        <a class="ml-2" href="">
+                        <a class="ml-2" href="https://linkedin.com/in/elvissam" target="_blank">
                             <font-awesome-icon :icon="['fab', 'linkedin']" size="lg" />
                         </a>
                     </div>

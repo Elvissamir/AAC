@@ -298,11 +298,11 @@ export default {
                 }
                 
                 else if (nodes[i] == 'F' && nodes[i+1] == "J") {
-                    squares = squares.concat([44, 45, 46, 47, 48]);
+                    squares = squares.concat([43, 44, 45, 46, 47, 48]);
                 }
                 
                 else if (nodes[i] == 'J' && nodes[i+1] == "F") {
-                    squares = squares.concat([44, 45, 46, 47, 48].reverse());
+                    squares = squares.concat([43, 44, 45, 46, 47, 48].reverse());
                 }
                 
                 else if (nodes[i] == 'F' && nodes[i+1] == "G") {
