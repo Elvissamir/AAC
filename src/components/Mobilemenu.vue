@@ -30,17 +30,8 @@ import { ref } from 'vue'
 
 export default {
     setup(props, context) {
-        
-        const showNav = ref(false);
-
-        const toggleNavbar = () => {   
-
-            if (showNav.value == false)
-                showNav.value = true;
-            else 
-                showNav.value = false;
-
-            context.emit('toggle-navbar', showNav.value);
+        const toggleNavbar = () => {
+            context.emit('toggle-navbar');
         }
 
         return {

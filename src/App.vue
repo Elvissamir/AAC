@@ -2,7 +2,7 @@
   <div class="app-container">
     
     <Mobilemenu @toggle-navbar="showNavbar"></Mobilemenu>
-    <Nav :show="shownav"></Nav>
+    <Nav :show="show"></Nav>
 
     <div class="w-full">
       <router-view/>
@@ -28,16 +28,16 @@ export default {
   },
   setup () {
 
-    const shownav = ref(false)
+    const show = ref(false)
     const screenWidth = ref(window.innerWidth)
 
     const checkScreenWidth = () => {
       if (screenWidth.value >= 1024)
-        shownav.value = true
+        show.value = true
     }
 
     const showNavbar = (event) => {
-      shownav.value = event
+      show.value = show.value ? false : true 
     }
 
     onMounted(() => {
@@ -54,8 +54,8 @@ export default {
     })
 
     return {
-      showNavbar,
-      shownav,
+      show,
+      showNavbar
     }
   }
 }
